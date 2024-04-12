@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="C:\Users\clebe\new\sistemaEdu\impc\sys.ico">
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f1f1f1;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Borda do formulário */
+        form {
+            border: 3px solid #f1f1f1;
+            background-color: #ffffff;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Center the avatar image */
+       .imgcontainer {
+            text-align: center;
+        }
+        
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        /* Inputs */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Botão de login */
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* Efeito de hover para o botão */
+        button:hover {
+            opacity: 0.8;
+        }
+
+        /* Link "Esqueceu a senha" */
+        .psw {
+            float: right;
+        }
+
+        /* Estilos para telas pequenas */
+        @media screen and (max-width: 600px) {
+            form {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="imgcontainer">
+            <img src="C:\Users\clebe\new\sistemaEdu\impc\education.png" alt="o log possui um livro aberto com um ramo de trepadeira no cento" class="avatar">
+        </div>
+        <form action="action_page.php" method="post">
+            <label for="uname"><b>Nome de Usuário</b></label>
+            <input type="text" placeholder="Digite o nome de usuário" name="uname" required>
+            <label for="psw"><b>Senha</b></label>
+            <input type="password" placeholder="Digite a senha" name="psw" required>
+            <button type="submit">Login</button>
+            <div class="psw">
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
